@@ -9,9 +9,9 @@ namespace Clocks
     [Fact]
     public void Degrees_angle()
     {
-      Clock testClock = new Clock(5);
+      Clock testClock = new Clock(8);
       int degreeTest = testClock.AngleReturn(testClock._hour);
-      Assert.Equal(150, degreeTest);
+      Assert.Equal(120, degreeTest);
     }
   }
 }

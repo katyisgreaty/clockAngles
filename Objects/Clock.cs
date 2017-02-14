@@ -15,14 +15,20 @@ namespace Clocks.Objects
 
     public int AngleReturn(int hour)
     {
-      if ((hour == 1) || (hour == 2) || (hour == 3) || (hour == 4) || (hour == 5) || (hour == 6))
+      if ((hour >= 1) && (hour <=6))
       {
         return (hour * 30);
+      } else if ((hour >= 7) && (hour <=12))
+      {
+        return (360 - (hour * 30));
       }
       else
       {
-        return 22;
+        return 400;
       }
     }
   }
 }
+
+
+// (hour == 7) || (hour == 8) || (hour == 9) || (hour == 10) || (hour == 11) || (hour == 12)
